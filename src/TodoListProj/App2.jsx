@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import './App2.css';
 import Todolist  from "./Todolist";
+
+import AddIcon from '@material-ui/icons/Add';
 function App2() {
 
     const [data, setdata] = useState("");
@@ -36,9 +38,10 @@ return id!==index;
                     <br />
                     <h1> To Do List</h1>
                     <div className="upperhalf">
-                        <input type="text" placeholder="Add to your List" autoComplete="false" value={data} onChange={getdata} />
-                        <button onClick={add}> + </button>
-                        <ol>
+                    <div className="tocen">
+                  <input type="text" placeholder="Add to your List" autoComplete="false" value={data} onChange={getdata} />
+                                <AddIcon fontSize="large" className="button" onClick={add}/>
+                     </div>        <ol>
                             {items.map((val,ind)=>{
                                  return <Todolist  
                                  key={ind}

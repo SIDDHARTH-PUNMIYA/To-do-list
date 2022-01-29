@@ -28,10 +28,15 @@
       margin-bottom: 10px;
       box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.3);
   }
+  .tocen{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
   input{
       width: 60%;
       height: 30px;
-      top: 10px;
+      padding-top:10px;
       background: transparent;
       margin-right: 10px ;
       border: none;
@@ -39,14 +44,14 @@
     font-size: 1.1rem;
       outline: none;
   }
-  button{
-      width: 40px;
-      min-height: 40px ;
+  
+  .button{
+      margin-top: 10px;
      border-radius: 50%;
      background-color:   rgb(186, 226, 43);
      border-color: transparent;
   }
-  button:hover{
+  .button:hover{
       background-color: green;
       cursor: pointer;
       color: white;
@@ -91,7 +96,7 @@
         .todo_style .fa-times{
             margin: 0 15px 0 15px;
         }
-        button{
+        .button{
             margin-left: 5px;
             min-height: 40px;
             width: 40px;
